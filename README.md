@@ -1,6 +1,6 @@
 # GitHub Workflow Test
 
-[![CI](https://github.com/justorez/github-workflow-test/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/justorez/github-workflow-test/actions/workflows/ci.yml)
+[![release](https://github.com/justorez/github-workflow-test/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/justorez/github-workflow-test/actions/workflows/release.yml)
 
 > Vue 3 + TypeScript + Vite
 
