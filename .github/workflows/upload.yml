@@ -1,0 +1,37 @@
+name: upload
+
+on:
+  # 定时执行
+  #schedule:
+    #- cron: "0 0 * * *"
+  # 手动执行
+  workflow_dispatch:
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+            version: 8
+
+      - name: install node
+        uses: actions/setup-node@v3
+        with:
+            node-version: 20
+            cache: 'pnpm'
+     
+      - name: build
+        run: |
+            pnpm install
+            pnpm run build
+
+      - name: upload-artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: upload-test
+          path: dist/
+          retention-days: 3
