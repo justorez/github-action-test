@@ -27,11 +27,15 @@ on:
         description: '调试模式'
         type: boolean
         default: false
+env:
+  DEBUG: ${{ inputs.debug && 'pica' }}
 
 jobs:
   download:
     runs-on: ubuntu-latest
     steps:
+      - run: echo $DEBUG
+
       - uses: actions/checkout@v4
 
       - name: install pnpm
