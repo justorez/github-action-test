@@ -6,6 +6,27 @@ on:
     #- cron: "0 0 * * *"
   # 手动执行
   workflow_dispatch:
+    inputs:
+      account:
+        description: '账号'
+        type: string
+      password:
+          description: '密码'
+          type: number
+          default: 123456
+      way:
+        description: '类型'
+        required: true
+        type: choice
+        default: A
+        options:
+          - A
+          - B
+          - C
+      debug:
+        description: '调试模式'
+        type: boolean
+        default: false
 
 jobs:
   download:
