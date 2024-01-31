@@ -2,12 +2,8 @@ name: release
 
 on:
   push:
-    branches: main
-    paths:
-      - 'vite.config.ts'
-      - 'package.json'
-      - 'src/**'
-      - 'public/**'
+    tags:
+      - '*.*.*'
 
 concurrency:
   group: release-${{ github.ref }}
@@ -64,6 +60,7 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          draft: true
+          # draft: true
           tag_name: ${{ env.VERSION }}
           files: ${{ env.VERSION }}.zip
+          generate_release_notes: true
