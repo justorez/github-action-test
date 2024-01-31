@@ -25,4 +25,5 @@ jobs:
             cache: 'pnpm'
       
       - run: |
+          pnpm install
           node scripts/cn.js
