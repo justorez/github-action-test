@@ -12,11 +12,13 @@ fs.readdirSync(__dirname)
     fs.rmSync(path.join(__dirname, x))
   })
 
+console.log(fs.readdirSync(__dirname))
+
 for (const file of fs.readdirSync(dataDir)) {
   const filePath = path.join(dataDir, file)
 
   let zip = new AdmZip()
-  zip.addLocalFolder(filePath)
+  await zip.addLocalFolderPromise(filePath)
   // zip.writeZip(path.join(__dirname, `${file}.zip`))
   const buf = zip.toBuffer()
   fs.writeFileSync(path.join(__dirname, `${file}.zip`), buf)
