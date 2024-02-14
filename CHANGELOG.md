@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/justorez/github-workflow-test/compare/v1.1.0...v1.2.0) (2024-02-14)
+
+
+### Features
+
+* test standard-version for releasing ([5ba7c93](https://github.com/justorez/github-workflow-test/commit/5ba7c93f76f3f8ff966b10d0b4dfa39c71d8751b))
+
 ## [1.1.0](https://github.com/justorez/github-workflow-test/compare/v1.0.0...v1.1.0) (2024-02-14)
 
 
