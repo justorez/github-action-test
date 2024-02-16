@@ -2,8 +2,8 @@ name: upload artifact
 
 on:
   # 定时执行
-  #schedule:
-    #- cron: "0 0 * * *"
+  # schedule:
+    # - cron: "0 0 * * *"
   # 手动执行
   workflow_dispatch:
     inputs:
@@ -27,14 +27,18 @@ on:
         description: '调试模式'
         type: boolean
         default: false
+
 env:
+  account: ${{ inputs.account }}
+  password: ${{ inputs.password }}
+  way: ${{ inputs.way }}
   DEBUG: ${{ inputs.debug && 'pica' }}
 
 jobs:
   download:
     runs-on: ubuntu-latest
     steps:
-      - run: echo $DEBUG
+      - run: node -p "console.log(process.env)"
 
       - uses: actions/checkout@v4
 
