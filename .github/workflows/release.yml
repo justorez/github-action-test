@@ -3,7 +3,7 @@ name: release
 on:
   push:
     tags:
-      - '*.*.*'
+      - 'TEST_1_V*'
 
 concurrency:
   group: release-${{ github.ref }}
