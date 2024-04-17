@@ -1,6 +1,6 @@
 {
   "name": "github-test",
-  "version": "1.1.2-beta.2",
+  "version": "1.1.2-beta.1",
   "description": "",
   "packageManager": "pnpm@9.0.1",
   "main": "index.js",
@@ -8,16 +8,25 @@
   "scripts": {
     "changelog-v1": "changelogen --output",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
-    "release": "bumpp -r --no-push"
+    "release": "bumpp -r --all --no-push -x \"pnpm changelog\""
   },
   "keywords": [],
   "author": "justorez",
   "license": "MIT",
   "devDependencies": {
     "@inquirer/prompts": "^5.0.0",
+    "@types/minimist": "^1.2.5",
+    "@types/node": "^20.12.7",
+    "@types/semver": "^7.5.8",
+    "@types/shelljs": "^0.8.15",
     "bumpp": "^9.4.0",
     "changelogen": "^0.5.5",
     "conventional-changelog-cli": "^4.1.0",
+    "enquirer": "^2.4.1",
+    "execa": "^8.0.1",
+    "minimist": "^1.2.8",
+    "picocolors": "^1.0.0",
+    "prettier": "^3.2.5",
     "semver": "^7.6.0",
     "shelljs": "^0.8.5",
     "vitest": "^1.5.0"
