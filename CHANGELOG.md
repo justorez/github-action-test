@@ -1,26 +1,92 @@
-# Changelog
 
-## [1.2.0](https://github.com/justorez/github-workflow-test/compare/v1.1.0...v1.2.0) (2024-02-14)
+## v1.1.0...main
 
+[compare changes](https://github.com/justorez/github-test/compare/v1.1.0...main)
 
-### Features
+### 🚀 Enhancements
 
-* test standard-version for releasing ([5ba7c93](https://github.com/justorez/github-workflow-test/commit/5ba7c93f76f3f8ff966b10d0b4dfa39c71d8751b))
+- Test standard-version for releasing ([5ba7c93](https://github.com/justorez/github-test/commit/5ba7c93))
+- Monorepo release script ([aca8c24](https://github.com/justorez/github-test/commit/aca8c24))
 
-## [1.1.0](https://github.com/justorez/github-workflow-test/compare/v1.0.0...v1.1.0) (2024-02-14)
+### 📖 Documentation
 
+- Update badges ([31ed738](https://github.com/justorez/github-test/commit/31ed738))
 
-### Features
+### 🏡 Chore
 
-* add initial version ([392edb2](https://github.com/justorez/github-workflow-test/commit/392edb2f43fccec5f9f513c084d06f0f345d7a60))
-* input by external ([cb8d686](https://github.com/justorez/github-workflow-test/commit/cb8d6862b06defac4d058ce6d7dc6a1b316a9c0b))
-* test generate release notes auto ([86c5a4d](https://github.com/justorez/github-workflow-test/commit/86c5a4dd0c8f936b1437e449326eacb763597965))
-* test release-please action ([6ad2f09](https://github.com/justorez/github-workflow-test/commit/6ad2f09327936fa7dd18347ee453bcbcf1e09962))
+- **main:** Release 1.2.0 ([d783925](https://github.com/justorez/github-test/commit/d783925))
+- Test env in action ([1b4daf5](https://github.com/justorez/github-test/commit/1b4daf5))
+- Monorepos ([b5cb7e7](https://github.com/justorez/github-test/commit/b5cb7e7))
+- Release v1.1.2-beta.1 ([0efb75a](https://github.com/justorez/github-test/commit/0efb75a))
 
+### 🤖 CI
 
-### Bug Fixes
+- **release:** Set github token ([ddd5b1d](https://github.com/justorez/github-test/commit/ddd5b1d))
+- New way to release to github ([a22f4b1](https://github.com/justorez/github-test/commit/a22f4b1))
 
-* forget to install deps ([6f3a979](https://github.com/justorez/github-workflow-test/commit/6f3a97926e795999d78287082b7d050347bd9ec5))
-* get pkg version ([8a6a06d](https://github.com/justorez/github-workflow-test/commit/8a6a06dea301aaaa994b6391c962280a65b566b8))
-* how to use env vars ([b882a25](https://github.com/justorez/github-workflow-test/commit/b882a25faff52cce939eabc0623b58b3a9b2fa09))
-* **workflow:** add lock file ([9a525ad](https://github.com/justorez/github-workflow-test/commit/9a525adfef67ec56f03c14bb71e1864b76d82770))
+### ❤️ Contributors
+
+- Justorez <alonezero@foxmail.com>
+- Neo <alonezero@foxmail.com>
+
+## 1.0.0...1.1.0
+
+[compare changes](https://github.com/justorez/github-test/compare/1.0.0...1.1.0)
+
+### 🚀 Enhancements
+
+- Test release-please action ([6ad2f09](https://github.com/justorez/github-test/commit/6ad2f09))
+
+### 🩹 Fixes
+
+- Forget to install deps ([6f3a979](https://github.com/justorez/github-test/commit/6f3a979))
+
+### 🏡 Chore
+
+- Release template ([ef54367](https://github.com/justorez/github-test/commit/ef54367))
+- Admzip bug ([afe6ae9](https://github.com/justorez/github-test/commit/afe6ae9))
+- **main:** Release 1.1.0 ([ae93760](https://github.com/justorez/github-test/commit/ae93760))
+
+### ✅ Tests
+
+- Chinese traditional ([f3632c2](https://github.com/justorez/github-test/commit/f3632c2))
+
+### ❤️ Contributors
+
+- Neo <alonezero@foxmail.com>
+- Justorez <alonezero@foxmail.com>
+
+## 1.0.0
+
+[compare changes](https://github.com/justorez/github-test/compare/f900d46d08723006b3f014017503670b43841d15...1.0.0)
+
+### 🚀 Enhancements
+
+- Add initial version ([392edb2](https://github.com/justorez/github-test/commit/392edb2))
+- Test generate release notes auto ([86c5a4d](https://github.com/justorez/github-test/commit/86c5a4d))
+- Input by external ([cb8d686](https://github.com/justorez/github-test/commit/cb8d686))
+
+### 🩹 Fixes
+
+- **workflow:** Add lock file ([9a525ad](https://github.com/justorez/github-test/commit/9a525ad))
+- Get pkg version ([8a6a06d](https://github.com/justorez/github-test/commit/8a6a06d))
+- How to use env vars ([b882a25](https://github.com/justorez/github-test/commit/b882a25))
+
+### 🏡 Chore
+
+- Upload v3 to v4 ([401b9eb](https://github.com/justorez/github-test/commit/401b9eb))
+
+### ✅ Tests
+
+- Upload artifact ([54b31f5](https://github.com/justorez/github-test/commit/54b31f5))
+- Print env ([0bf65e6](https://github.com/justorez/github-test/commit/0bf65e6))
+- Release ([0de6ef5](https://github.com/justorez/github-test/commit/0de6ef5))
+
+### 🤖 CI
+
+- Rename ([bfa4ec1](https://github.com/justorez/github-test/commit/bfa4ec1))
+
+### ❤️ Contributors
+
+- Justorez <alonezero@foxmail.com>
+

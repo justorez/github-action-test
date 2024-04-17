@@ -6,6 +6,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "changelog": "changelogen --output",
     "release": "bumpp -r --no-push"
   },
   "keywords": [],
@@ -14,6 +15,7 @@
   "devDependencies": {
     "@inquirer/prompts": "^5.0.0",
     "bumpp": "^9.4.0",
+    "changelogen": "^0.5.5",
     "semver": "^7.6.0",
     "shelljs": "^0.8.5",
     "vitest": "^1.5.0"
