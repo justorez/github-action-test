@@ -1,3 +1,13 @@
+## [1.1.2](https://github.com/justorez/github-test/compare/v1.1.2-beta.1...v1.1.2) (2024-04-17)
+
+
+### Features
+
+* changelog script ([7e7291e](https://github.com/justorez/github-test/commit/7e7291e00d5106d3bfda38d8dfcd169ecb02fb82))
+* release version and generate changelog in one command ([e561056](https://github.com/justorez/github-test/commit/e561056b868bcbf67ceaa99686639b8769932b68))
+
+
+
 ## [1.1.2-beta.1](https://github.com/justorez/github-test/compare/v1.1.0...v1.1.2-beta.1) (2024-04-17)
 
 
