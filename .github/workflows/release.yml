@@ -33,7 +33,7 @@ jobs:
           fetch-depth: 0
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v3
         with:
           version: latest
 
@@ -45,7 +45,7 @@ jobs:
 
       - run: pnpm install
 
-      - run: npx changelogithub --draft # or changelogithub@0.12 if ensure the stable result
+      - run: pnpm dlx changelogithub --draft
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
