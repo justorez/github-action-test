@@ -2,16 +2,18 @@
   "name": "github-test",
   "version": "1.1.1",
   "description": "",
+  "packageManager": "pnpm@9.0.1",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "release": "node scripts/release.js"
+    "release": "bumpp -r --no-push"
   },
   "keywords": [],
   "author": "justorez",
   "license": "MIT",
   "devDependencies": {
     "@inquirer/prompts": "^5.0.0",
+    "bumpp": "^9.4.0",
     "semver": "^7.6.0",
     "shelljs": "^0.8.5",
     "vitest": "^1.5.0"
