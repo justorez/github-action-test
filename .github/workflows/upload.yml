@@ -3,7 +3,7 @@ name: upload artifact
 on:
   # 定时执行
   # schedule:
-    # - cron: "0 0 * * *"
+  # - cron: "0 0 * * *"
   # 手动执行
   workflow_dispatch:
     inputs:
@@ -11,9 +11,9 @@ on:
         description: '账号'
         type: string
       password:
-          description: '密码'
-          type: number
-          default: 123456
+        description: '密码'
+        type: number
+        default: 123456
       way:
         description: '类型'
         required: true
@@ -45,18 +45,17 @@ jobs:
       - name: install pnpm
         uses: pnpm/action-setup@v2
         with:
-            version: 8
+          version: 8
 
       - name: install node
         uses: actions/setup-node@v4
         with:
-            node-version: 20
-            cache: 'pnpm'
-     
+          node-version: 20
+          cache: 'pnpm'
+
       - name: build
         run: |
-            pnpm install
-            pnpm run build
+          pnpm install
 
       - name: upload-artifact
         uses: actions/upload-artifact@v4
